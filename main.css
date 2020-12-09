@@ -1,0 +1,64 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-control{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.btn.btn.btn{
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #00b09b;
+	background: -webkit-linear-gradient(to left, #96c93d, #00b09b);
+	background: linear-gradient(to left, #96c93d, #00b09b);
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 5px 2px yellow;
+}
+
+.result{
+    margin-top: 30px;
+    width: 300px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    color: black;
+    background: #E55D87;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5FC3E4, #E55D87); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+button{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.result::before{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    opacity: 0.5;
+    content: "Bratanim siqilimen javob shu yerda 😊";
+}
+
+.result::after{
+    position: absolute;
+    top: 17%;
+    left: 29%;
+    opacity: 0.5;
+    content: "<<<<<<< MANA Javob 😊";
+}
