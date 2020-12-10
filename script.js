@@ -8,16 +8,18 @@ elForm.addEventListener('submit', function (evt) {
 
     var test = elFormInput.value;
 
-    if (elFormInput.value % 3 == 0) {
-        elResult.textContent = 'Fizz';
+    if (elFormInput.value % 3 === 0 && elFormInput.value % 5 === 0) {
+        elResult.textContent = 'FizzBazz';
 
-    } else if (elFormInput.value % 5 == 0){
+    } else if (elFormInput.value % 5 === 0){
         elResult.textContent = 'Bazz';
 
-    } else if (elFormInput.value % 5 == 0 && elFormInput.value % 3 == 0) {
-        elResult.textContent = 'FizzBazz';
+    } else if (elFormInput.value % 3 === 0) {
+        elResult.textContent = 'Fizz';
+
     } else {
-        elResult.textContent = 'error';
+        elResult.textContent = elFormInput.value;
+        
     }
 
     console.log(test);
